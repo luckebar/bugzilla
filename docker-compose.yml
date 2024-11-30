@@ -17,7 +17,7 @@ services:
       - /tmp
       - /run/lock
     ports:
-      - 8080:80
+      - 80:80
     depends_on:
       - bugzilla5.db
     environment: &bugzilla_env
