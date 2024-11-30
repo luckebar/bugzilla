@@ -23,8 +23,8 @@ services:
     environment: &bugzilla_env
       - BZ_ADMIN_EMAIL=admin@bugzilla.test
       - BZ_ADMIN_PASSWORD=password01!
-      - BZ_ADMIN_REALNAME=Test Admin
-      - BZ_URLBASE=http://127.0.0.1:8080/
+      - BZ_ADMIN_REALNAME=Bugzilla Admin
+      - BZ_URLBASE=http://bugzilla.it1.eur.aruba.jenv-aruba.cloud/
       - BZ_DB_HOST=bugzilla5.db
       - BZ_DB_PORT=3306
       - BZ_DB_USER=bugs
