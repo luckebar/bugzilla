@@ -52,6 +52,7 @@ RUN apt-get -y install \
 
 # Ubuntu22 doesn't ship new enough versions of a few modules, so get them from CPAN
 RUN cpan install Template::Toolkit Email::Address::XS Email::Sender DBD::MariaDB
+RUN cpan DateTime::TimeZone
 
 WORKDIR /var/www/html
 COPY --chown=root:www-data . /var/www/html
